@@ -1,0 +1,17 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:/home/lei//utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:/home/lei//wav_train_yesno.1.scp ark:- | copy-feats --write-num-frames=ark,t:/home/lei//utt2num_frames.1 --compress=true ark:- ark,scp:/home/lei/kaldi/egs/yesno/s5/data/train_yesno/data/raw_mfcc_train_yesno.1.ark,/home/lei/kaldi/egs/yesno/s5/data/train_yesno/data/raw_mfcc_train_yesno.1.scp 
+# Started at Sun Jul 28 21:37:20 CST 2019
+#
+copy-feats --write-num-frames=ark,t:/home/lei//utt2num_frames.1 --compress=true ark:- ark,scp:/home/lei/kaldi/egs/yesno/s5/data/train_yesno/data/raw_mfcc_train_yesno.1.ark,/home/lei/kaldi/egs/yesno/s5/data/train_yesno/data/raw_mfcc_train_yesno.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:/home/lei//utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:/home/lei//wav_train_yesno.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_0_0_1_1_1_1
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_0_1_0_0_0_1
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_0_1_0_1_1_0
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_1_0_0_0_1_0
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_1_0_0_1_1_0
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_1_0_0_1_1_1
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_1_0_1_0_0_0
+VLOG[2] (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:182) Processed features for key 0_0_1_0_1_0_0_1
+LOG (compute-mfcc-feats[5.5.430~1-06442]:main():compute-mfcc-feats.cc:185)  Done 8 out of 8 utterances.
+LOG (copy-feats[5.5.430~1-06442]:main():copy-feats.cc:143) Copied 8 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sun Jul 28 21:37:20 CST 2019, elapsed time 0 seconds
