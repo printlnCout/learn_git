@@ -3,4 +3,4 @@ Git is free software distributed under the GPL.
 Add distributed
 something
 modifyed by dev
-Creating a new branch is quick & simple.
+end
